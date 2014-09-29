@@ -1,4 +1,4 @@
-rnilekani@python-server:~# ansible-playbook router.yml --check
+rnilekani@python-server:~# ansible-playbook router.yml --check 
 
 PLAY [local] ****************************************************************** 
 
