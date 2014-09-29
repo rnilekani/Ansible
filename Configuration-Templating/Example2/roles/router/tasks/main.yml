@@ -1,0 +1,4 @@
+---
+- name: Generate Arista Configuration file.
+  template: src=router1.j2 dest=/root/{{item.hostname}}.txt
+  with_items: test_routers
