@@ -1,0 +1,19 @@
+!
+hostname {{item.hostname}}
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+int Ethernet1
+ no switchport
+ ip address {{item.ip_addr}}
+
+ip routing
+
+{% if item.DHCP %}:
+ip dhcp pool POOL1
+  network {{item.dhcp_network}} 255.255.255.0
+  default-router {{item.ip_addr}}	
+  dns_server 8.8.8.8 8.8.4.4
+{% endif %}
