@@ -1,0 +1,13 @@
+# Sample Arista Configuration used as a template.
+!
+hostname {{item.hostname}}
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+int Ethernet1
+ no switchport
+ ip address {{item.ip_addr}}
+
+ip routing
