@@ -1,0 +1,6 @@
+test_switches:
+   - {hostname: prod_switch1, ip_addr: 10.10.10.10, default_gateway: 10.10.10.1, secret: cool, access_vlan: 10, snmp_community: public }
+   - {hostname: prod_switch2, ip_addr: 10.20.20.20, default_gateway: 10.20.20.1, secret: cool, access_vlan: 20, snmp_community: public }
+   - {hostname: prod_switch3, ip_addr: 10.30.30.30, default_gateway: 10.30.30.1, secret: cool, access_vlan: 30, snmp_community: public }
+   - {hostname: prod_switch4, ip_addr: 10.40.40.40, default_gateway: 10.40.40.1, secret: cool, access_vlan: 40, snmp_community: public }
+   - {hostname: prod_switch5, ip_addr: 10.50.50.50, default_gateway: 10.50.50.1, secret: cool, access_vlan: 50, snmp_community: public }
