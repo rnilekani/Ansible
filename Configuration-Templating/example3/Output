@@ -1,0 +1,34 @@
+rnilekani@python-server:~/APPLIED-PYTHON/CLASS3/exercise1# ansible-playbook site.yml --check
+
+PLAY [Generate Configuration files for production switches.] ****************** 
+
+GATHERING FACTS *************************************************************** 
+ok: [localhost]
+
+TASK: [switch | Creating startup configurations for 5 switches.] ************** 
+ok: [localhost] => (item={'access_vlan': 10, 'secret': 'cool', 'snmp_community': 'public', 'default_gateway': '10.10.10.1', 'ip_addr': '10.10.10.10', 'hostname': 'prod_switch1'})
+ok: [localhost] => (item={'access_vlan': 20, 'secret': 'cool', 'snmp_community': 'public', 'default_gateway': '10.20.20.1', 'ip_addr': '10.20.20.20', 'hostname': 'prod_switch2'})
+ok: [localhost] => (item={'access_vlan': 30, 'secret': 'cool', 'snmp_community': 'public', 'default_gateway': '10.30.30.1', 'ip_addr': '10.30.30.30', 'hostname': 'prod_switch3'})
+ok: [localhost] => (item={'access_vlan': 40, 'secret': 'cool', 'snmp_community': 'public', 'default_gateway': '10.40.40.1', 'ip_addr': '10.40.40.40', 'hostname': 'prod_switch4'})
+ok: [localhost] => (item={'access_vlan': 50, 'secret': 'cool', 'snmp_community': 'public', 'default_gateway': '10.50.50.1', 'ip_addr': '10.50.50.50', 'hostname': 'prod_switch5'})
+
+PLAY RECAP ******************************************************************** 
+localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+
+rnilekani@python-server:~/APPLIED-PYTHON/CLASS3/exercise1# ansible-playbook site.yml
+
+PLAY [Generate Configuration files for production switches.] ****************** 
+
+GATHERING FACTS *************************************************************** 
+ok: [localhost]
+
+TASK: [switch | Creating startup configurations for 5 switches.] ************** 
+ok: [localhost] => (item={'access_vlan': 10, 'secret': 'cool', 'snmp_community': 'public', 'default_gateway': '10.10.10.1', 'ip_addr': '10.10.10.10', 'hostname': 'prod_switch1'})
+ok: [localhost] => (item={'access_vlan': 20, 'secret': 'cool', 'snmp_community': 'public', 'default_gateway': '10.20.20.1', 'ip_addr': '10.20.20.20', 'hostname': 'prod_switch2'})
+ok: [localhost] => (item={'access_vlan': 30, 'secret': 'cool', 'snmp_community': 'public', 'default_gateway': '10.30.30.1', 'ip_addr': '10.30.30.30', 'hostname': 'prod_switch3'})
+ok: [localhost] => (item={'access_vlan': 40, 'secret': 'cool', 'snmp_community': 'public', 'default_gateway': '10.40.40.1', 'ip_addr': '10.40.40.40', 'hostname': 'prod_switch4'})
+ok: [localhost] => (item={'access_vlan': 50, 'secret': 'cool', 'snmp_community': 'public', 'default_gateway': '10.50.50.1', 'ip_addr': '10.50.50.50', 'hostname': 'prod_switch5'})
+
+PLAY RECAP ******************************************************************** 
+localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+
