@@ -1,0 +1,3 @@
+- name: Creating startup configurations for 5 switches.
+  template: src=access_switch.j2 dest=configs/{{item.hostname}}.txt
+  with_items: test_switches
