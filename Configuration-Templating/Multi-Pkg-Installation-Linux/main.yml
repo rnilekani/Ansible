@@ -1,4 +1,7 @@
 '''
+Everytime I spin up a cloud server, I have to go through the painful process of installing each one of them. In order to overcome 
+that hurdle, I have written an Ansible playbook that would create all of them in one go.
+
 root@python-server:~# ansible-playbook package1.yml 
 
 PLAY [local] ****************************************************************** 
