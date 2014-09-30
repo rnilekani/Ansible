@@ -1,4 +1,4 @@
-rnilekani@python-server:~/APPLIED-PYTHON/CLASS3/exercise1# ansible-playbook site.yml --check
+rnilekani@python-server:# ansible-playbook site.yml --check
 
 PLAY [Generate Configuration files for production switches.] ****************** 
 
@@ -15,7 +15,7 @@ ok: [localhost] => (item={'access_vlan': 50, 'secret': 'cool', 'snmp_community':
 PLAY RECAP ******************************************************************** 
 localhost                  : ok=2    changed=0    unreachable=0    failed=0   
 
-rnilekani@python-server:~/APPLIED-PYTHON/CLASS3/exercise1# ansible-playbook site.yml
+rnilekani@python-server:# ansible-playbook site.yml
 
 PLAY [Generate Configuration files for production switches.] ****************** 
 
