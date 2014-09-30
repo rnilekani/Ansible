@@ -1,0 +1,28 @@
+'''
+root@python-server:~# ansible-playbook package1.yml 
+
+PLAY [local] ****************************************************************** 
+
+GATHERING FACTS *************************************************************** 
+ok: [localhost]
+
+TASK: [Install Packages.] ***************************************************** 
+ok: [localhost] => (item=nmap,traceroute,ruby)
+
+PLAY RECAP ******************************************************************** 
+localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+'''
+
+
+
+---
+- hosts: local
+  tasks:
+    - name: Install Packages.
+      apt: pkg={{ item }} state=installed update_cache=true
+      with_items:
+        - nmap
+        - traceroute
+        - ruby
+
+
