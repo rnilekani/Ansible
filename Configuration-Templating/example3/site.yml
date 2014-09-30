@@ -1,0 +1,5 @@
+- name: Generate Configuration files for production switches.
+  hosts: local
+ 
+  roles:
+    - switch
