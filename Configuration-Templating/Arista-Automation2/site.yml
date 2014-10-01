@@ -1,0 +1,4 @@
+ - name: Ansible Automation for generating startup configs for Arista switches in Cell-1
+   hosts: local
+   roles: 
+    - for-loop-ansible
