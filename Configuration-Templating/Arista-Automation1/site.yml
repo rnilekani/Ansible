@@ -1,0 +1,4 @@
+ - name: Generating startup config for Ansible switches in our Cloud Cell Region 1
+   hosts: local
+   roles:
+     - ansible-switches
