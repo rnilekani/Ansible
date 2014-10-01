@@ -1,0 +1,33 @@
+rnilekani@python-server:# ansible-playbook site.yml --check
+
+PLAY [Ansible Automation for generating startup configs for Arista switches in Cell-1] *** 
+
+GATHERING FACTS *************************************************************** 
+ok: [localhost]
+
+TASK: [for-loop-ansible | Ansible automation for creating Arista switch configuration in Cell 1] *** 
+ok: [localhost] => (item={'access_vlan': 10, 'secret': 'password', 'snmp_community': 'public', 'default_gateway': '10.10.10.1', 'ip_addr': '10.10.10.10', 'hostname': 'EOS-1', 'SNMPv3': True})
+ok: [localhost] => (item={'access_vlan': 20, 'secret': 'password', 'snmp_community': 'public', 'default_gateway': '10.20.20.1', 'ip_addr': '10.20.20.20', 'hostname': 'EOS-2', 'SNMPv3': False})
+ok: [localhost] => (item={'access_vlan': 30, 'secret': 'password', 'snmp_community': 'public', 'default_gateway': '10.30.30.1', 'ip_addr': '10.30.30.30', 'hostname': 'EOS-3', 'SNMPv3': False})
+ok: [localhost] => (item={'access_vlan': 40, 'secret': 'password', 'snmp_community': 'public', 'default_gateway': '10.40.40.1', 'ip_addr': '10.40.40.40', 'hostname': 'EOS-4', 'SNMPv3': True})
+ok: [localhost] => (item={'access_vlan': 50, 'secret': 'password', 'snmp_community': 'public', 'default_gateway': '10.50.50.1', 'ip_addr': '10.50.50.50', 'hostname': 'EOS-5', 'SNMPv3': True})
+
+PLAY RECAP ******************************************************************** 
+localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+
+rnilekani@python-server:# ansible-playbook site.yml
+
+PLAY [Ansible Automation for generating startup configs for Arista switches in Cell-1] *** 
+
+GATHERING FACTS *************************************************************** 
+ok: [localhost]
+
+TASK: [for-loop-ansible | Ansible automation for creating Arista switch configuration in Cell 1] *** 
+ok: [localhost] => (item={'access_vlan': 10, 'secret': 'password', 'snmp_community': 'public', 'default_gateway': '10.10.10.1', 'ip_addr': '10.10.10.10', 'hostname': 'EOS-1', 'SNMPv3': True})
+ok: [localhost] => (item={'access_vlan': 20, 'secret': 'password', 'snmp_community': 'public', 'default_gateway': '10.20.20.1', 'ip_addr': '10.20.20.20', 'hostname': 'EOS-2', 'SNMPv3': False})
+ok: [localhost] => (item={'access_vlan': 30, 'secret': 'password', 'snmp_community': 'public', 'default_gateway': '10.30.30.1', 'ip_addr': '10.30.30.30', 'hostname': 'EOS-3', 'SNMPv3': False})
+ok: [localhost] => (item={'access_vlan': 40, 'secret': 'password', 'snmp_community': 'public', 'default_gateway': '10.40.40.1', 'ip_addr': '10.40.40.40', 'hostname': 'EOS-4', 'SNMPv3': True})
+ok: [localhost] => (item={'access_vlan': 50, 'secret': 'password', 'snmp_community': 'public', 'default_gateway': '10.50.50.1', 'ip_addr': '10.50.50.50', 'hostname': 'EOS-5', 'SNMPv3': True})
+
+PLAY RECAP ******************************************************************** 
+localhost                  : ok=2    changed=0    unreachable=0    failed=0   
