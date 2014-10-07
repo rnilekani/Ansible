@@ -1,0 +1,21 @@
+C4E4
+
+PLAY [Arista-Ansible Exercise4] *********************************************** 
+
+GATHERING FACTS *************************************************************** 
+ok: [pynet-sw2]
+
+TASK: [Configure Ethernet6 for access mode, VLAN1] **************************** 
+changed: [pynet-sw2]
+
+TASK: [Reset Ethernet6 description to default] ******************************** 
+changed: [pynet-sw2]
+
+TASK: [Remove VLANs] ********************************************************** 
+changed: [pynet-sw2] => (item={'name': 'kb1', 'vlanid': 221})
+changed: [pynet-sw2] => (item={'name': 'kb2', 'vlanid': 222})
+changed: [pynet-sw2] => (item={'name': 'kb3', 'vlanid': 223})
+
+PLAY RECAP ******************************************************************** 
+pynet-sw2                  : ok=4    changed=3    unreachable=0    failed=0  
+
