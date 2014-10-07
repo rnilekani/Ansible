@@ -1,0 +1,19 @@
+C4E2
+
+
+Output:
+
+
+PLAY [Using Ansible to configure Arista's Ethernet Interfaces.] *************** 
+
+GATHERING FACTS *************************************************************** 
+ok: [sw2]
+
+TASK: [Setting up Ethernet6 description.] ************************************* 
+changed: [sw2]
+
+TASK: [Set Ethernet6 to access mode, VLAN# 100] ******************************* 
+changed: [sw2]
+
+PLAY RECAP ******************************************************************** 
+sw2                  : ok=3    changed=2    unreachable=0    failed=0   
