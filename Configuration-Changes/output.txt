@@ -2,19 +2,7 @@ C4E1
 
 Output:
 
-PLAY [Testing Ansible Arista Configuration] *********************************** 
-
-GATHERING FACTS *************************************************************** 
-ok: [pynet-sw2]
-
-TASK: [Create VLANs on Arista Swicthes.] ************************************** 
-changed: [sw2] => (item={'name': 'BLUE', 'vlan_id': 100})
-changed: [sw2] => (item={'name': 'RED', 'vlan_id': 200})
-changed: [sw2] => (item={'name': 'GREEN', 'vlan_id': 300})
-
-PLAY RECAP ******************************************************************** 
-sw2                  : ok=2    changed=1    unreachable=0    failed=0   
-
+1.png
 
 Add the following entry to /etc/ansible/hosts:
 
