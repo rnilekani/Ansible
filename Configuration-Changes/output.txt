@@ -1,0 +1,20 @@
+Output:
+
+PLAY [Testing Ansible Arista Configuration] *********************************** 
+
+GATHERING FACTS *************************************************************** 
+ok: [pynet-sw2]
+
+TASK: [Create VLANs on Arista Swicthes.] ************************************** 
+changed: [sw2] => (item={'name': 'BLUE', 'vlan_id': 100})
+changed: [sw2] => (item={'name': 'RED', 'vlan_id': 200})
+changed: [sw2] => (item={'name': 'GREEN', 'vlan_id': 300})
+
+PLAY RECAP ******************************************************************** 
+sw2                  : ok=2    changed=1    unreachable=0    failed=0   
+
+
+Add the following entry to /etc/ansible/hosts:
+
+sw2 ansible_connection=local eapi_username=eapi eapi_password=****** eapi_hostname=X.X.X.X eapi_port=443
+
