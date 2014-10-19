@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 '''
-Using Arista's eapilib, create a script that allows you to add a VLAN (both the 
+Using Arista's eapilib, Create a script that allows you to add a VLAN (both the 
 VLAN ID and the VLAN name).  Your script should first check that the VLAN ID is 
 available and only add the VLAN if it doesn't already exist.  Use VLAN IDs 
 between 100 and 999.  You should be able to call the script from the command 
